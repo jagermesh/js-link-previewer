@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <h1>Link Previewer Demo</h1>
+
+    <div class="row">
+      <div class="col-md-10">
+        <ul>
+          <li>
+            <a href="demo-files/file.csv">CSV File</a>
+          </li>
+          <li>
+            <a href="demo-files/file.jpeg">JPEG Image</a>
+          </li>
+          <li>
+            <a href="demo-files/file.mp4">MP4 File</a>
+          </li>
+          <li>
+            <a href="demo-files/file.pdf">PDF File</a>
+          </li>
+          <li>
+            <a href="demo-files/file.png">PNG Image</a>
+          </li>
+          <li>
+            <a href="demo-files/file.svg">SVG File</a>
+          </li>
+          <li>
+            <a href="demo-files/file.txt">TXT File</a>
+          </li>
+          <li>
+            <a href="demo-files/file.xml">XML File</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.13.216/pdf.min.js"></script>
+  <script src="link-previewer.js"></script>
+  <script>
+    /* global LinkPreviewer */
+    const linkPreviewer = new LinkPreviewer();
+    linkPreviewer.attach('div.container-fluid a');
+  </script>
+</body>
+</html>
