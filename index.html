@@ -10,7 +10,7 @@
     <h1>Link Previewer Demo</h1>
 
     <div class="row">
-      <div class="col-md-10">
+      <div class="col-md-8">
         <ul>
           <li>
             <a href="demo-files/file.csv">CSV File</a>
@@ -38,9 +38,15 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-2">
-        <ul>
-        </ul>
+      <div class="col-md-4">
+<pre style="border:1px solid #666;right:10px;border-radius: 4px;font-size: 9pt;background-color: black;color:white;">
+&lt;script src="link-previewer.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  /* global LinkPreviewer */
+  const linkPreviewer = new LinkPreviewer();
+  linkPreviewer.attach('div.container-fluid a');
+&lt;/script&gt;
+</pre>
       </div>
     </div>
   </div>
