@@ -4,7 +4,7 @@ Simple, lightweight pure JavaScript component that adds a link preview functiona
 
 ## Demo
 
-https://jagermesh.github.io/link-previewer/
+https://jagermesh.github.io/js-link-previewer/
 
 ## Usage:
 
