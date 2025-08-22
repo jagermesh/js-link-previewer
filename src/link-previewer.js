@@ -193,6 +193,7 @@
           renderPdf(url);
         } else if (
           (contentType.indexOf('text/xml') != -1) ||
+          (contentType.indexOf('text/csv') != -1) ||
           (contentType.indexOf('text/plain') != -1)
         ) {
           renderText(url);
