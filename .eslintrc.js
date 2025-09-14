@@ -15,12 +15,6 @@ module.exports = {
   },
   'ignorePatterns': [
     'dist/js/**/*.js',
-    'js/dist/**/*.js',
-    'js/**/*.bundle.js',
-    'js/**/*.min.js',
-    'vendor/**/*.js',
-    'simplesaml/**/*.js',
-    '3rdparty/**/*.js',
   ],
   'rules': {
     'no-eval': 1,
