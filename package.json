@@ -35,7 +35,7 @@
     "lint": "eslint src",
     "test": "npm run lint"
   },
-  "version": "1.0.7",
+  "version": "1.0.8",
   "engines": {
     "node": ">=12.0.0"
   },
