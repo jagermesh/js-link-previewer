@@ -4,9 +4,7 @@ Simple, lightweight pure JavaScript component that adds a link preview functiona
 
 ## Demo
 
-https://jagermesh.github.io/js-link-previewer/
-
-Or open `demo.html` from this repo directly in your browser (no build step required) to see it in action.
+Open `demo.html` from this repo directly in your browser (no build step required) to see it in action.
 
 ## Installation
 
