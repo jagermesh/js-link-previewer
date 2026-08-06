@@ -18,7 +18,6 @@ npm install @jagermesh/js-link-previewer
 import LinkPreviewer from '@jagermesh/js-link-previewer';
 
 const linkPreviewer = new LinkPreviewer();
-
 linkPreviewer.attach('a');
 ~~~
 
@@ -26,12 +25,10 @@ linkPreviewer.attach('a');
 
 ~~~html
 <script src="https://unpkg.com/@jagermesh/js-link-previewer/dist/link-previewer.min.js"></script>
-~~~
-
-~~~js
-const linkPreviewer = new window.LinkPreviewer();
-
-linkPreviewer.attach('a');
+<script>
+  const linkPreviewer = new window.LinkPreviewer();
+  linkPreviewer.attach('a');
+</script>
 ~~~
 
 ## Usage
@@ -59,9 +56,3 @@ linkPreviewer.attach('a', {
   },
 });
 ~~~
-
-That's all.
-
-Have fun. Send PR if you find any glitches or want to make improvements.
-
-:)
