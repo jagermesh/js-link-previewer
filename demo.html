@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>js-link-previewer demo</title>
+  <script src="dist/link-previewer.js"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 640px;
+      margin: 60px auto;
+      line-height: 1.6;
+    }
+    a {
+      display: block;
+      margin: 12px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Link Previewer demo</h1>
+  <p>Hover any link below to see a preview overlay appear next to your cursor.</p>
+
+  <a href="https://raw.githubusercontent.com/jagermesh/js-link-previewer/master/README.md">Preview a plain-text file (README.md)</a>
+  <a href="https://picsum.photos/400/300">Preview an image</a>
+  <a href="#">Preview an unresolvable link (falls back to "not available")</a>
+
+  <script>
+    const linkPreviewer = new window.LinkPreviewer();
+
+    linkPreviewer.attach('a', {
+      bgColor: '#ffffff',
+      fgColor: '#222222',
+    });
+  </script>
+</body>
+</html>

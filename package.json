@@ -12,23 +12,27 @@
     "link previewer"
   ],
   "license": "MIT",
-  "main": "link-previewer.js",
+  "main": "dist/link-previewer.min.js",
+  "module": "src/link-previewer.js",
+  "unpkg": "dist/link-previewer.min.js",
+  "jsdelivr": "dist/link-previewer.min.js",
   "name": "js-link-previewer",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/jagermesh/js-link-previewer.git"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-eslint-new": "^1.9.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-terser": "^2.1.0",
-    "eslint": "^8.57.0"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.8.0",
+    "globals": "^17.9.0",
+    "terser-webpack-plugin": "^5.6.1",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2"
   },
   "scripts": {
-    "build": "npm install && gulp build",
-    "update": "npm update && gulp build",
-    "test": "echo \"OK\""
+    "build": "npm install && npm audit fix && webpack --config webpack.config.mjs",
+    "update": "npm update && npm audit fix && webpack --config webpack.config.mjs",
+    "lint": "eslint src"
   },
   "version": "1.0.6",
   "engines": {

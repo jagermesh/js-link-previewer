@@ -1,4 +1,4 @@
-# Link Previwer
+# Link Previewer
 
 Simple, lightweight pure JavaScript component that adds a link preview functionality.
 
@@ -6,24 +6,60 @@ Simple, lightweight pure JavaScript component that adds a link preview functiona
 
 https://jagermesh.github.io/js-link-previewer/
 
-## Usage:
+Or open `demo.html` from this repo directly in your browser (no build step required) to see it in action.
 
-1) Include the script:
+## Installation
 
-~~~
-<script type="text/javascript" src="link-previewer.js"></script>
-~~~
-
-2) Create Link Previwer instance
+### As an ES module / npm package
 
 ~~~
+npm install js-link-previewer
+~~~
+
+~~~js
+import LinkPreviewer from 'js-link-previewer';
+
+const linkPreviewer = new LinkPreviewer();
+
+linkPreviewer.attach('a');
+~~~
+
+### As a plain `<script>` tag
+
+~~~html
+<script src="https://unpkg.com/js-link-previewer/dist/link-previewer.min.js"></script>
+~~~
+
+~~~js
+const linkPreviewer = new window.LinkPreviewer();
+
+linkPreviewer.attach('a');
+~~~
+
+## Usage
+
+1) Create a Link Previewer instance:
+
+~~~js
 const linkPreviewer = new LinkPreviewer();
 ~~~
 
-3) Attach to selector
+2) Attach it to a selector:
 
-~~~
+~~~js
 linkPreviewer.attach('a');
+~~~
+
+`attach` also accepts an optional settings object:
+
+~~~js
+linkPreviewer.attach('a', {
+  bgColor: 'white',
+  fgColor: 'black',
+  beautify: function(overlayElement, linkElement) {
+    // customize the preview overlay before it is shown
+  },
+});
 ~~~
 
 That's all.
