@@ -1,4 +1,4 @@
-const COMPONENT_CLASS = 'link-previewer';
+const COMPONENT_CLASS = 'jm-link-previewer';
 const STYLE_CLASS = `${COMPONENT_CLASS}-styles`;
 
 const STYLE_CSS = `
