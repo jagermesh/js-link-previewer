@@ -26,16 +26,21 @@ const STYLE_CSS = `
     text-align:center;
   }
   .${COMPONENT_CLASS}-image-content {
+    box-sizing: border-box;
     width:100%;
     padding:5px;
   }
   .${COMPONENT_CLASS}-drawing {
   }
   .${COMPONENT_CLASS}-text {
+    box-sizing: border-box;
     min-height:190px;
     max-height:300px;
     overflow:hidden;
     padding:10px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
   .${COMPONENT_CLASS}-html {
     padding:10px;
