@@ -13,11 +13,11 @@ Or open `demo.html` from this repo directly in your browser (no build step requi
 ### As an ES module / npm package
 
 ~~~
-npm install js-link-previewer
+npm install @jagermesh/js-link-previewer
 ~~~
 
 ~~~js
-import LinkPreviewer from 'js-link-previewer';
+import LinkPreviewer from '@jagermesh/js-link-previewer';
 
 const linkPreviewer = new LinkPreviewer();
 
@@ -27,7 +27,7 @@ linkPreviewer.attach('a');
 ### As a plain `<script>` tag
 
 ~~~html
-<script src="https://unpkg.com/js-link-previewer/dist/link-previewer.min.js"></script>
+<script src="https://unpkg.com/@jagermesh/js-link-previewer/dist/link-previewer.min.js"></script>
 ~~~
 
 ~~~js
